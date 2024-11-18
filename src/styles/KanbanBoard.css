@@ -1,0 +1,83 @@
+/* Kanban Board Wrapper */
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive column layout */
+  gap: 16px; /* Space between columns */
+  padding-top: 16px;
+  padding-bottom: 16px;
+  overflow-x: auto; /* Scroll horizontally if there are many columns */
+}
+
+/* Kanban Column */
+.kanban-column {
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 250px; /* Minimum width for a column */
+}
+
+/* Column Header */
+.column-header {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Vertically center align items */
+  margin-bottom: 12px; /* Space below the header */
+}
+
+/* Header Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon, name, and ticket count */
+}
+
+/* Column Icon */
+.column-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover; /* Ensure the icon fits properly */
+  border-radius: 50%; /* Optional for rounded icons */
+}
+
+/* Column Title */
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* Remove default margin */
+}
+
+/* Ticket Count */
+.ticket-count {
+  background-color: #e0e0e0; /* Badge background color */
+  color: #333; /* Text color */
+  padding: 2px 8px; /* Inner padding for the badge */
+  border-radius: 12px; /* Rounded edges */
+  font-size: 0.875rem; /* Slightly smaller text */
+}
+
+/* Header Right Section */
+.header-right {
+  display: flex;
+  gap: 8px; /* Space between Add and More icons */
+}
+
+/* Action Icons */
+.action-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+.action-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Column Content */
+.kanban-column-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between cards */
+}

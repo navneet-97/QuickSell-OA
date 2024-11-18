@@ -1,0 +1,90 @@
+.dropdown-container {
+    position: relative;
+  }
+  
+  .display-button {
+    background-color: white;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .display-button:hover {
+    background-color: #f4f5f7;
+  }
+  
+  .dropdown-icon {
+    font-size: 0.7em;
+    color: #5e6c84;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 10;
+  }
+  
+  .dropdown-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .dropdown-group label {
+    color: #5e6c84;
+    font-size: 14px;
+  }
+  
+  .dropdown-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dfe1e6;
+    border-radius: 4px;
+  }
+  
+  .dropdown-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .display-confirm-button,
+  .display-cancel-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .display-confirm-button {
+    background-color: #0079bf;
+    color: white;
+    border: none;
+  }
+  
+  .display-confirm-button:hover {
+    background-color: #026aa7;
+  }
+  
+  .display-cancel-button {
+    background-color: #f4f5f7;
+    color: #5e6c84;
+    border: 1px solid #dfe1e6;
+  }
+  
+  .display-cancel-button:hover {
+    background-color: #ebecf0;
+  }

@@ -1,0 +1,21 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 16px;
+  color: #5e6c84;
+  line-height: 1.25;
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #5e6c84;
+}
+
+.error {
+  color: #de350b;
+  text-align: center;
+}
